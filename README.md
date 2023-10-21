@@ -46,8 +46,8 @@ If you use this dataset in your work, please consider citing:
 ## Contributors
 We would like to thank the following contributors for their valuable contributions to the development of this dataset.
 
-- [Contributor 1 Name]
-- [Contributor 2 Name]
-- [Contributor 3 Name]
+- Bipin Saha
+- Aditya Bhowmik
+  
 
 For any queries or concerns, please contact [email address].

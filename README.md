@@ -7,6 +7,8 @@ The Bangladeshi Native Vehicle Dataset (BNVD) is a comprehensive collection of i
 
 ## Dataset Details
 - Total Images: 14,521
+- Instances : 72000+
+- BBox Per Image - 5.008
 - Vehicle Categories:
   1. Bicycle
   2. Bus

@@ -7,26 +7,26 @@ Robust and precise vehicle recognition is crucial to the success of Autonomous N
 
 ## Dataset Details
 - Total Images: 14,521
-- Instances : 72000+
+- Instances : 72722
 - BBox Per Image - 5.008
 - Vehicle Categories:
-  1. Bicycle
-  2. Bus
-  3. Bhotbhoti
-  4. Car
-  5. CNG
-  6. Easybike
-  7. Leguna
-  8. Motorbike
-  9. MPV
-  10. Pedestrian
-  11. Pickup
-  12. PowerTiller
-  13. Rickshaw
-  14. ShoppingVan
-  15. Truck
-  16. Van
-  17. Wheelbarrow
+  `1. Bicycle`
+  `2. Bus`
+  `3. Bhotbhoti`
+  `4. Car`
+  `5. CNG`
+  `6. Easybike`
+  `7. Leguna`
+  `8. Motorbike`
+  `9. MPV`
+  `10. Pedestrian`
+  `11. Pickup`
+  `12. PowerTiller`
+  `13. Rickshaw`
+  `14. ShoppingVan`
+  `15. Truck`
+  `16. Van`
+  `17. Wheelbarrow`
 
 ## Model Testing Results
 The dataset has been rigorously tested with YOLO v5-v8 models. The mean Average Precision at 50% Intersection over Union (IoU) is an impressive 84.3%.

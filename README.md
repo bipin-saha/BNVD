@@ -28,6 +28,10 @@ Robust and precise vehicle recognition is crucial to the success of Autonomous N
   `16. Van`
   `17. Wheelbarrow`
 
+<div align=center>
+<img src="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/92f4d7e6c194451fd288ba7eecfdd7de8f7e978d/Graphics/Dataset.jpg"/>
+</div>
+
 ## Model Testing Results
 The dataset has been rigorously tested with YOLO v5-v8 models. The mean Average Precision at 50% Intersection over Union (IoU) is an impressive 84.3%.
 

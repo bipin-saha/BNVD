@@ -35,6 +35,29 @@ Robust and precise vehicle recognition is crucial to the success of Autonomous N
 ## Model Testing Results
 The dataset has been rigorously tested with YOLO v5-v8 models. The mean Average Precision at 50% Intersection over Union (IoU) is an impressive 84.3%.
 
+| Model        | Dataset          | mAP0.5     | mAP 0.5:0.95   | Precision  | Recall     | Weight                                                                                                                                                                   |
+| --------     | ---------------- | ---------- | -------------- | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **YOLOv5**   | CARL-D           | 0.437      | 0.328          | 0.633      | 0.423      | |   
+|              | DhakaAI          | 0.416      | 0.255          | 0.640      | 0.393      | |
+|              | P2 Dhaka         | 0.655      | 0.400          | 0.804      | 0.581      | |
+|              | PoribohonBD      | 0.981      | 0.743          | 0.939      | 0.948      | |
+|              | **BNVD**         | **0.816**  | **0.589**      | **0.814**  | **0.758**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V5/weights/best.pt)      |
+| **YOLOv6**   | CARL-D           | 0.479      | 0.372          | 0.58       | 0.453      | |
+|              | DhakaAI          | 0.420      | 0.262          | 0.311      | 0.548      | |
+|              | P2 Dhaka         | 0.775      | 0.494          | 0.762      | 0.71       | |
+|              | PoribohonBD      | 0.899      | 0.648          | 0.899      | 0.81       | |
+|              | **BNVD**         | **0.627**  | **0.398**      | **0.642**  | **0.58**   | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V6/weights/best_ckpt.pt) |
+| **YOLOv7**   | CARL-D           | 0.478      | 0.369          | 0.619      | 0.459      | |
+|              | DhakaAI          | 0.464      | 0.284          | 0.692      | 0.438      | |
+|              | P2 Dhaka         | 0.743      | 0.462          | 0.816      | 0.688      | |
+|              | PoribohonBD      | 0.907      | 0.656          | 0.914      | 0.841      | |
+|              | **BNVD**         | **0.842**  | **0.613        | **0.815**  | **0.779**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V7/weights/best.pt)      |
+| **YOLOv8**   | CARL-D           | 0.478      | 0.359          | 0.602      | 0.446      | |
+|              | DhakaAI          | 0.435      | 0.276          | 0.694      | 0.446      | |
+|              | P2 Dhaka         | 0.69       | 0.449          | 0.798      | 0.604      | | 
+|              | PoribohonBD      | 0.889      | 0.658          | 0.898      | 0.823      | |
+|              | **BNVD**         | **0.831**  | **0.616**      | **0.835**  | **0.767**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V8/weights/best.pt)      |
+
 ## Download
 The dataset and related resources can be downloaded from [here](link_to_download_page).
 

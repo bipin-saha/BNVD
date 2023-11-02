@@ -3,7 +3,7 @@
 ![BNVD Banner](link_to_banner_image)
 
 ## Overview
-The Bangladeshi Native Vehicle Dataset (BNVD) is a comprehensive collection of images representing 17 vehicle categories commonly found in Bangladesh. The dataset contains a total of 14,521 images with over 72,000 annotated object instances. It has been extensively tested with YOLO v5-v8 models, and the weight files are available in the "Checkpoints" folder.
+Robust and precise vehicle recognition is crucial to the success of Autonomous Navigation. The development of trustworthy and context-aware autonomous navigation systems adapted to the region’s diverse road conditions and vehicular landscape is significantly hampered by the lack of a comprehensive vehicle detection dataset on a particular region. To advance terrestrial object detection research, this paper proposes a native vehicle detection dataset for the most commonly appeared vehicle classes in Bangladesh. 17 distinct vehicle classes have been taken into account, with fully annotated 72722 instances of 14521 images. Each image width is set to at least 1280px. The dataset’s average vehicle bounding box to image ratio is 5.008. This Bangladesh Native Vehicle Dataset (BNVD) has accounted for several geographical, illumination, and variety of vehicle sizes to be more robust on surprised scenarios Four successive You Only Look Once (YOLO) model models—YOLO v5, v6, v7, and v8—were systematically evaluated in order to analyze BNVD dataset. Among these models, YOLO v7 emerged as the most effective, surpassing all others regarding vehicle detection accuracy.
 
 ## Dataset Details
 - Total Images: 14,521

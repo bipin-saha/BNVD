@@ -74,12 +74,12 @@ If you use this dataset in your work, please consider citing:
 We would like to thank the following contributors for their valuable contributions to the development of this dataset.
 
 - Bipin Saha (bipinsaha.bd@gmail.com)
-- Md. Johirul Islam ()
-- Shaikh Khaled Mostaque
-- Aditya Bhowmik
-- Tapodhir Karmakar Taton
-- Md Nakib Hayat Chowdhury
-- Mamun Ibne Bin Reaz
+- Md. Johirul Islam (johirul@phy.ruet.ac.bd)
+- Shaikh Khaled Mostaquez* (misha@ru.ac.bd)
+- Aditya Bhowmik (bhowmik.aditya0@gmail.com)
+- Tapodhir Karmakar Taton (tapodhirtaton@gmail.com)
+- Md Nakib Hayat Chowdhury (nakib2025@gmail.com)
+- Mamun Ibne Bin Reaz* (mamun.reaz@iub.edu.bd)
   
 
-For any queries or concerns, please contact [bipinsaha.bd@gmail.com].
+For any queries or concerns, please contact [bipinsaha.bd@gmail.com, mamun.reaz@iub.edu.bd].

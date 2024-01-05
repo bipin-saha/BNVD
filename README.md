@@ -1,13 +1,11 @@
 # Bangladeshi Native Vehicle Dataset - BNVD
 
-![BNVD Banner](link_to_banner_image)
-
 ## Overview
-Robust and precise vehicle recognition is crucial to the success of Autonomous Navigation. The development of trustworthy and context-aware autonomous navigation systems adapted to the region’s diverse road conditions and vehicular landscape is significantly hampered by the lack of a comprehensive vehicle detection dataset on a particular region. To advance terrestrial object detection research, this paper proposes a native vehicle detection dataset for the most commonly appeared vehicle classes in Bangladesh. 17 distinct vehicle classes have been taken into account, with fully annotated 72722 instances of 14521 images. Each image width is set to at least 1280px. The dataset’s average vehicle bounding box to image ratio is 5.008. This Bangladesh Native Vehicle Dataset (BNVD) has accounted for several geographical, illumination, and variety of vehicle sizes to be more robust on surprised scenarios Four successive You Only Look Once (YOLO) model models—YOLO v5, v6, v7, and v8—were systematically evaluated in order to analyze BNVD dataset. Among these models, YOLO v7 emerged as the most effective, surpassing all others regarding vehicle detection accuracy.
+The success of autonomous navigation relies on robust and precise vehicle recognition, hindered by the scarcity of region-specific vehicle detection datasets, impeding the development of context-aware systems. To advance terrestrial object detection research, this paper proposes a native vehicle detection dataset for the most commonly appeared vehicle classes in Bangladesh. 17 distinct vehicle classes have been taken into account, with fully annotated 72722 instances of 14521 images. Each image width is set to at least 1280px. The dataset’s average vehicle bounding box-to-image ratio is 5.008. This Bangladesh Native Vehicle Dataset (BNVD) has accounted for several geographical, illumination, variety of vehicle sizes, and orientations to be more robust on surprised scenarios. In the context of examining the BNVD dataset, this work provides a thorough assessment with four successive You Only Look Once (YOLO) models, namely YOLO v5, v6, v7, and v8. These dataset’s effectiveness is methodically evaluated and contrasted with other vehicle datasets already in use. The BNVD dataset exhibits mean average precision(mAP) at 50% intersection over union(IoU) is 0.842 corresponding precision and recall values of 0.815 and 0.779. The research findings indicate a mAP of 0.613 at an IoU range of 0.5 to 0.95. The experiments show that the BNVD dataset serves as a reliable representation of vehicle distribution and presents considerable complexities
 
 ## Dataset Details
 - Total Images: 14,521
-- Instances : 72722
+- Instances: 72722
 - BBox Per Image - 5.008
 - Vehicle Categories:
   `1. Bicycle`
@@ -75,8 +73,13 @@ If you use this dataset in your work, please consider citing:
 ## Contributors
 We would like to thank the following contributors for their valuable contributions to the development of this dataset.
 
-- Bipin Saha
+- Bipin Saha (bipinsaha.bd@gmail.com)
+- Md. Johirul Islam ()
+- Shaikh Khaled Mostaque
 - Aditya Bhowmik
+- Tapodhir Karmakar Taton
+- Md Nakib Hayat Chowdhury
+- Mamun Ibne Bin Reaz
   
 
-For any queries or concerns, please contact [email address].
+For any queries or concerns, please contact [bipinsaha.bd@gmail.com].

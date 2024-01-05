@@ -75,7 +75,7 @@ We would like to thank the following contributors for their valuable contributio
 
 - Bipin Saha (bipinsaha.bd@gmail.com)
 - Md. Johirul Islam (johirul@phy.ruet.ac.bd)
-- Shaikh Khaled Mostaquez* (misha@ru.ac.bd)
+- Shaikh Khaled Mostaque* (misha@ru.ac.bd)
 - Aditya Bhowmik (bhowmik.aditya0@gmail.com)
 - Tapodhir Karmakar Taton (tapodhirtaton@gmail.com)
 - Md Nakib Hayat Chowdhury (nakib2025@gmail.com)

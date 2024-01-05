@@ -59,7 +59,7 @@ The dataset has been rigorously tested with YOLO v5-v8 models. The mean Average 
 |              | **BNVD**         | **0.831**  | **0.616**      | **0.835**  | **0.767**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V8/weights/best.pt)      |
 
 ## Download
-The dataset and related resources can be downloaded from [here](link_to_download_page).
+The dataset and related resources can be downloaded from [here](https://www.kaggle.com/datasets/df94f7d6faf5374ca372cdb7456067ffa7786867578fa6b524d0fe7b5ee43ab6).
 
 ## Checkpoints
 Pre-trained model weight files can be found in the "Checkpoints" folder of this repository.

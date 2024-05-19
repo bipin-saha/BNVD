@@ -31,7 +31,7 @@ The success of autonomous navigation relies on robust and precise vehicle recogn
 </div>
 
 ## Model Testing Results
-The dataset has been rigorously tested with YOLO v5-v8 models. The mean Average Precision at 50% Intersection over Union (IoU) is an impressive 84.3%.
+The dataset has been rigorously tested with YOLO v5-v8 models. The mean Average Precision at 50% Intersection over Union (IoU) is an impressive 84.8%.
 
 | Model        | Dataset          | mAP0.5     | mAP 0.5:0.95   | Precision  | Recall     | Weight                                                                                                                                                                   |
 | --------     | ---------------- | ---------- | -------------- | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

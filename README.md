@@ -39,22 +39,22 @@ The dataset has been rigorously tested with YOLO v5-v8 models. The mean Average 
 |              | DhakaAI          | 0.416      | 0.255          | 0.640      | 0.393      | |
 |              | P2 Dhaka         | 0.655      | 0.400          | 0.804      | 0.581      | |
 |              | PoribohonBD      | 0.981      | 0.743          | 0.939      | 0.948      | |
-|              | **BNVD**         | **0.826**  | **0.609**      | **0.836**  | **0.762**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V5/weights/best.pt)      |
+|              | **BNVD**         | **0.826**  | **0.609**      | **0.836**  | **0.762**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V5/weights/best.pt)      |
 | **YOLOv6**   | CARL-D           | 0.479      | 0.372          | 0.58       | 0.453      | |
 |              | DhakaAI          | 0.420      | 0.262          | 0.311      | 0.548      | |
 |              | P2 Dhaka         | 0.775      | 0.494          | 0.762      | 0.71       | |
 |              | PoribohonBD      | 0.899      | 0.648          | 0.899      | 0.81       | |
-|              | **BNVD**         | **0.837**  | **0.624**      | **0.805**  | **0.76**   | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V6/weights/best_ckpt.pt) |
+|              | **BNVD**         | **0.837**  | **0.624**      | **0.805**  | **0.76**   | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V6/weights/best_ckpt.pt) |
 | **YOLOv7**   | CARL-D           | 0.478      | 0.369          | 0.619      | 0.459      | |
 |              | DhakaAI          | 0.464      | 0.284          | 0.692      | 0.438      | |
 |              | P2 Dhaka         | 0.743      | 0.462          | 0.816      | 0.688      | |
 |              | PoribohonBD      | 0.907      | 0.656          | 0.914      | 0.841      | |
-|              | **BNVD**         | **0.841**  | **0.623**      | **0.83**  | **0.779**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V7/weights/best.pt)      |
+|              | **BNVD**         | **0.841**  | **0.623**      | **0.83**  | **0.779**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V7/weights/best.pt)      |
 | **YOLOv8**   | CARL-D           | 0.478      | 0.359          | 0.602      | 0.446      | |
 |              | DhakaAI          | 0.435      | 0.276          | 0.694      | 0.446      | |
 |              | P2 Dhaka         | 0.69       | 0.449          | 0.798      | 0.604      | | 
 |              | PoribohonBD      | 0.889      | 0.658          | 0.898      | 0.823      | |
-|              | **BNVD**         | **0.848**  | **0.643**      | **0.841**  | **0.774**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/52da6457d5a2f9f7dbc9fb6f1754f9c7d7875571/Cheakpoints/YOLO%20V8/weights/best.pt)      |
+|              | **BNVD**         | **0.848**  | **0.643**      | **0.841**  | **0.774**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V8/weights/yolov8_ods_new_100e_best.pt)      |
 
 ## Download
 The dataset and related resources can be downloaded from [here](https://www.kaggle.com/datasets/df94f7d6faf5374ca372cdb7456067ffa7786867578fa6b524d0fe7b5ee43ab6).

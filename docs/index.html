@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dataset Paper</title>
+    <title>BNVD : Bangladeshi Native Vehicle Datasert</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="banner">
             <h1>Bangladeshi Native Vehicle Detection in Wild</h1>
+            <h3>Bipin Saha, Md. Johirul Islam, Shaikh Khaled Mostaque, Aditya Bhowmik, Tapodhir Karmakar Taton, Md. Nakib Hayat Chowdhury, Mamun Ibne Bin Reaz</h3>
         </div>
     </header>
     
@@ -31,28 +32,238 @@
         <section id="abstract" class="section">
             <div class="container">
                 <h2>Abstract</h2>
-                <p>The success of autonomous navigation relies on robust and precise vehicle recognition, hindered by the scarcity of region-specific vehicle detection datasets, impeding the development of context-aware systems. To advance terrestrial object detection research, this paper proposes a native vehicle detection dataset for the most commonly appeared vehicle classes in Bangladesh. 17 distinct vehicle classes have been taken into account, with fully annotated 81542 instances of 17326 images. Each image width is set to at least 1280px. The dataset’s average vehicle bounding box-to-image ratio is 4.7036. This Bangladesh Native Vehicle Dataset (BNVD) has accounted for several geographical, illumination, variety of vehicle sizes, and orientations to be more robust on surprised scenarios. In the context of examining the BNVD dataset, this work provides a thorough assessment with four successive You Only Look Once (YOLO) models, namely YOLO v5, v6, v7, and v8. These dataset’s effectiveness is methodically evaluated and contrasted with other vehicle datasets already in use. The BNVD dataset exhibits mean average precision(mAP) at 50% intersection over union(IoU) is 0.848 corresponding precision and recall values of 0.841 and 0.774. The research findings indicate a mAP of 0.643 at an IoU range of 0.5 to 0.95. The experiments show that the BNVD dataset serves as a reliable representation of vehicle distribution and presents considerable complexities.</p>
+                <p style="text-align: justify;">The success of autonomous navigation relies on robust and precise vehicle recognition, hindered by the scarcity of region-specific vehicle detection datasets, impeding the development of context-aware systems. To advance terrestrial object detection research, this paper proposes a native vehicle detection dataset for the most commonly appeared vehicle classes in Bangladesh. 17 distinct vehicle classes have been taken into account, with fully annotated 81542 instances of 17326 images. Each image width is set to at least 1280px. The dataset’s average vehicle bounding box-to-image ratio is 4.7036. This Bangladesh Native Vehicle Dataset (BNVD) has accounted for several geographical, illumination, variety of vehicle sizes, and orientations to be more robust on surprised scenarios. In the context of examining the BNVD dataset, this work provides a thorough assessment with four successive You Only Look Once (YOLO) models, namely YOLO v5, v6, v7, and v8. These dataset’s effectiveness is methodically evaluated and contrasted with other vehicle datasets already in use. The BNVD dataset exhibits mean average precision(mAP) at 50% intersection over union(IoU) is 0.848 corresponding precision and recall values of 0.841 and 0.774. The research findings indicate a mAP of 0.643 at an IoU range of 0.5 to 0.95. The experiments show that the BNVD dataset serves as a reliable representation of vehicle distribution and presents considerable complexities.</p>
             </div>
         </section>
         
         <section id="overview" class="section">
             <div class="container">
                 <h2>Dataset Overview</h2>
-                <p>This section provides a brief overview of the dataset, including the sources, structure, and unique features.</p>
+                <p>Total Images: 17,326 <br>
+                    Instances: 81,542 <br>
+                    BBox Per Image: 4.7036 <br>
+                    Vehicle Categories: 1. Bicycle 2. Bus 3. Bhotbhoti 4. Car 5. CNG 6. Easybike 7. Leguna 8. Motorbike 9. MPV 10. Pedestrian 11. Pickup 12. PowerTiller 13. Rickshaw 14. ShoppingVan 15. Truck 16. Van 17. Wheelbarrow</p>
             </div>
         </section>
         
         <section id="evaluation" class="section">
             <div class="container">
                 <h2>Evaluation Results</h2>
-                <p>This section summarizes the evaluation results obtained from applying various methods to the dataset.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Dataset</th>
+                            <th>mAP0.5</th>
+                            <th>mAP 0.5:0.95</th>
+                            <th>Precision</th>
+                            <th>Recall</th>
+                            <th>Weight</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5"><strong>YOLOv5</strong></td>
+                            <td>CARL-D</td>
+                            <td>0.437</td>
+                            <td>0.328</td>
+                            <td>0.633</td>
+                            <td>0.423</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>DhakaAI</td>
+                            <td>0.416</td>
+                            <td>0.255</td>
+                            <td>0.640</td>
+                            <td>0.393</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>P2 Dhaka</td>
+                            <td>0.655</td>
+                            <td>0.400</td>
+                            <td>0.804</td>
+                            <td>0.581</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PoribohonBD</td>
+                            <td>0.981</td>
+                            <td>0.743</td>
+                            <td>0.939</td>
+                            <td>0.948</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>BNVD</strong></td>
+                            <td><strong>0.826</strong></td>
+                            <td><strong>0.609</strong></td>
+                            <td><strong>0.836</strong></td>
+                            <td><strong>0.762</strong></td>
+                            <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V5/weights/best.pt">Weight</a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5"><strong>YOLOv6</strong></td>
+                            <td>CARL-D</td>
+                            <td>0.479</td>
+                            <td>0.372</td>
+                            <td>0.58</td>
+                            <td>0.453</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>DhakaAI</td>
+                            <td>0.420</td>
+                            <td>0.262</td>
+                            <td>0.311</td>
+                            <td>0.548</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>P2 Dhaka</td>
+                            <td>0.775</td>
+                            <td>0.494</td>
+                            <td>0.762</td>
+                            <td>0.71</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PoribohonBD</td>
+                            <td>0.899</td>
+                            <td>0.648</td>
+                            <td>0.899</td>
+                            <td>0.81</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>BNVD</strong></td>
+                            <td><strong>0.837</strong></td>
+                            <td><strong>0.624</strong></td>
+                            <td><strong>0.805</strong></td>
+                            <td><strong>0.76</strong></td>
+                            <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V6/weights/best_ckpt.pt">Weight</a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5"><strong>YOLOv7</strong></td>
+                            <td>CARL-D</td>
+                            <td>0.478</td>
+                            <td>0.369</td>
+                            <td>0.619</td>
+                            <td>0.459</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>DhakaAI</td>
+                            <td>0.464</td>
+                            <td>0.284</td>
+                            <td>0.692</td>
+                            <td>0.438</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>P2 Dhaka</td>
+                            <td>0.743</td>
+                            <td>0.462</td>
+                            <td>0.816</td>
+                            <td>0.688</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PoribohonBD</td>
+                            <td>0.907</td>
+                            <td>0.656</td>
+                            <td>0.914</td>
+                            <td>0.841</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>BNVD</strong></td>
+                            <td><strong>0.841</strong></td>
+                            <td><strong>0.623</strong></td>
+                            <td><strong>0.83</strong></td>
+                            <td><strong>0.779</strong></td>
+                            <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V7/weights/best.pt">Weight</a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5"><strong>YOLOv8</strong></td>
+                            <td>CARL-D</td>
+                            <td>0.478</td>
+                            <td>0.359</td>
+                            <td>0.602</td>
+                            <td>0.446</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>DhakaAI</td>
+                            <td>0.435</td>
+                            <td>0.276</td>
+                            <td>0.694</td>
+                            <td>0.446</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>P2 Dhaka</td>
+                            <td>0.69</td>
+                            <td>0.449</td>
+                            <td>0.798</td>
+                            <td>0.604</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PoribohonBD</td>
+                            <td>0.889</td>
+                            <td>0.658</td>
+                            <td>0.898</td>
+                            <td>0.823</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>BNVD</strong></td>
+                            <td><strong>0.848</strong></td>
+                            <td><strong>0.643</strong></td>
+                            <td><strong>0.841</strong></td>
+                            <td><strong>0.774</strong></td>
+                            <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V8/weights/yolov8_ods_new_100e_best.pt">Weight</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
         
         <section id="contributors" class="section">
             <div class="container">
                 <h2>Contributors</h2>
-                <p>List of contributors who played a significant role in the research and creation of the dataset.</p>
+                <h5>Bipin Saha is with the Department of Electrical and Electronic Engi
+                    neering, University of Rajshahi, Rajshahi 6205, Bangladesh (e-mail: bipin
+                    saha.bd@gmail.com).</h5>
+                <h5>Md. Johirul Islam is with the Department of Physics, Rajshahi Univer
+                    sity of Engineering and Technology, Rajshahi 6204, Bangladesh (e-mail:
+                     johirul@phy.ruet.ac.bd).</h5>
+                <h5>
+                    Shaikh Khaled Mostaque is with the Department of Electrical and Elec
+tronic Engineering, University of Rajshahi, Rajshahi 6205, Bangladesh (e
+mail: misha@ru.ac.bd).
+                </h5>
+                <h5>
+                    Aditya Bhowmik is with the Department of Electrical and Electronic
+ Engineering, University of Rajshahi, Rajshahi 6205, Bangladesh (e-mail:
+ bhowmik.aditya0@gmail.com).
+                </h5>
+                <h5>
+                    Tapodhir Karmakar Taton is with the Department of Electrical and Elec
+tronic Engineering, University of Rajshahi, Rajshahi 6205, Bangladesh (e
+mail: tapodhirtaton@gmail.com).
+                </h5>
+                <h5>
+                    MdNakib Hayat Chowdhury is with the Department of Electrical Electronic
+ and Systems Engineering, Universiti Kebangsaan Malaysia, Malaysia (e-mail:
+ nakib2025@gmail.com).
+                </h5>
+                <h5>
+                    Mamun Bin Ibne Reaz is with the Electrical and Electronic Engineering,
+ Independent University, Bangladesh (e-mail: mamun.reaz@iub.edu.bd).
+                </h5>
             </div>
         </section>
         

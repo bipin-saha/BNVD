@@ -74,7 +74,7 @@ If you use this dataset in your work, please consider citing:
 We would like to thank the following contributors for their valuable contributions to the development of this dataset.
 
 - Bipin Saha (bipinsaha.bd@gmail.com)
-- Md. Johirul Islam (johirul@phy.ruet.ac.bd)
+- Md. Johirul Islam* (johirul@phy.ruet.ac.bd)
 - Shaikh Khaled Mostaque* (misha@ru.ac.bd)
 - Aditya Bhowmik (bhowmik.aditya0@gmail.com)
 - Tapodhir Karmakar Taton (tapodhirtaton@gmail.com)

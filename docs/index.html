@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Paper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Bangladeshi Native Vehicle Detection in Wild</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#overview">Dataset Overview</a></li>
+                <li><a href="#evaluation">Evaluation Results</a></li>
+                <li><a href="#contributors">Contributors</a></li>
+                <li><a href="#citation">Citation</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#tools">Tools</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="abstract" class="section">
+            <div class="container">
+                <h2>Abstract</h2>
+                <p>The success of autonomous navigation relies on robust and precise vehicle recognition, hindered by the scarcity of region-specific vehicle detection datasets, impeding the development of context-aware systems. To advance terrestrial object detection research, this paper proposes a native vehicle detection dataset for the most commonly appeared vehicle classes in Bangladesh. 17 distinct vehicle classes have been taken into account, with fully annotated 81542 instances of 17326 images. Each image width is set to at least 1280px. The dataset’s average vehicle bounding box-to-image ratio is 4.7036. This Bangladesh Native Vehicle Dataset (BNVD) has accounted for several geographical, illumination, variety of vehicle sizes, and orientations to be more robust on surprised scenarios. In the context of examining the BNVD dataset, this work provides a thorough assessment with four successive You Only Look Once (YOLO) models, namely YOLO v5, v6, v7, and v8. These dataset’s effectiveness is methodically evaluated and contrasted with other vehicle datasets already in use. The BNVD dataset exhibits mean average precision(mAP) at 50% intersection over union(IoU) is 0.848 corresponding precision and recall values of 0.841 and 0.774. The research findings indicate a mAP of 0.643 at an IoU range of 0.5 to 0.95. The experiments show that the BNVD dataset serves as a reliable representation of vehicle distribution and presents considerable complexities.</p>
+            </div>
+        </section>
+        
+        <section id="overview" class="section">
+            <div class="container">
+                <h2>Dataset Overview</h2>
+                <p>This section provides a brief overview of the dataset, including the sources, structure, and unique features.</p>
+            </div>
+        </section>
+        
+        <section id="evaluation" class="section">
+            <div class="container">
+                <h2>Evaluation Results</h2>
+                <p>This section summarizes the evaluation results obtained from applying various methods to the dataset.</p>
+            </div>
+        </section>
+        
+        <section id="contributors" class="section">
+            <div class="container">
+                <h2>Contributors</h2>
+                <p>List of contributors who played a significant role in the research and creation of the dataset.</p>
+            </div>
+        </section>
+        
+        <section id="citation" class="section">
+            <div class="container">
+                <h2>Citation</h2>
+                <p>DOI: <a href="https://doi.org/your-doi-link" target="_blank">https://doi.org/your-doi-link</a></p>
+            </div>
+        </section>
+
+        <section id="download" class="section">
+            <div class="container">
+                <h2>Download</h2>
+                <p>Here you can find the links to download the dataset and any supplementary materials.</p>
+                <ul>
+                    <li><a href="link-to-dataset.zip" target="_blank">Download Dataset (ZIP)</a></li>
+                    <li><a href="link-to-supplementary-materials.pdf" target="_blank">Download Supplementary Materials (PDF)</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tools" class="section">
+            <div class="container">
+                <h2>Tools</h2>
+                <p>This section provides links and descriptions of tools that can be used with the dataset.</p>
+                <ul>
+                    <li><a href="link-to-tool1" target="_blank">Tool 1</a> - Description of Tool 1.</li>
+                    <li><a href="link-to-tool2" target="_blank">Tool 2</a> - Description of Tool 2.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dataset Paper. All rights reserved.</p>
+            <p>Page Views: <span id="page-view-counter">0</span></p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple page view counter
+        document.addEventListener('DOMContentLoaded', () => {
+            let counter = localStorage.getItem('page_view_counter') || 0;
+            counter++;
+            localStorage.setItem('page_view_counter', counter);
+            document.getElementById('page-view-counter').textContent = counter;
+        });
+    </script>
+</body>
+</html>

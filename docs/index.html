@@ -39,292 +39,731 @@
         <section id="overview" class="section">
             <div class="container">
                 <h2>Dataset Overview</h2>
-                <p>Total Images: 17,326 <br>
-                    Instances: 81,542 <br>
-                    BBox Per Image: 4.7036 <br>
-                    Vehicle Categories: 1. Bicycle 2. Bus 3. Bhotbhoti 4. Car 5. CNG 6. Easybike 7. Leguna 8. Motorbike 9. MPV 10. Pedestrian 11. Pickup 12. PowerTiller 13. Rickshaw 14. ShoppingVan 15. Truck 16. Van 17. Wheelbarrow</p>
+                <p>
+                    <strong>Total Images:</strong> 17,326 <br>
+                    <strong>Instances:</strong> 81,542 <br>
+                    <strong>BBox Per Image:</strong> 4.7036 <br>
+                    <strong>Vehicle Categories:</strong>
+                    <ol style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-type: decimal;">
+                        <li>Bicycle</li>
+                        <li>Bus</li>
+                        <li>Bhotbhoti</li>
+                        <li>Car</li>
+                        <li>CNG</li>
+                        <li>Easybike</li>
+                        <li>Leguna</li>
+                        <li>Motorbike</li>
+                        <li>MPV</li>
+                        <li>Pedestrian</li>
+                        <li>Pickup</li>
+                        <li>PowerTiller</li>
+                        <li>Rickshaw</li>
+                        <li>ShoppingVan</li>
+                        <li>Truck</li>
+                        <li>Van</li>
+                        <li>Wheelbarrow</li>
+                    </ol>
+                </p>
+            </div>
+            <br>
+            <div class="image-container">
+                <img src="Dataset.jpg" alt="Description of the image">
+            </div>
+            <br>
+            <div class="container">	
+                <table>
+                    <div style="text-align: center;">
+                        <h4><b>Vehicle Detection Dataset Comparison (Horizontal Bounding Box)</b></h4>
+                    </div>
+                    
+                    <thead>
+                      <tr>
+                        <th>Dataset</th>
+                        <th>Categories</th>
+                        <th>Instances (BBox)</th>
+                        <th>Images</th>
+                        <th>Image Width</th>
+                        <th>Average BBox/Image</th>
+                        <th colspan="4">Diversity</th>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>Rainy</th>
+                        <th>Foggy</th>
+                        <th>Night</th>
+                        <th>Limited</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>KITTI</td>
+                        <td>8</td>
+                        <td>80000</td>
+                        <td>15000</td>
+                        <td>1392px</td>
+                        <td>5.3333</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>CityScapes 3D </td>
+                        <td>8</td>
+                        <td>27000</td>
+                        <td>5000</td>
+                        <td>2048px</td>
+                        <td>5.4</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>Rope3D </td>
+                        <td>12</td>
+                        <td>1500000</td>
+                        <td>50000</td>
+                        <td>1920px</td>
+                        <td>30</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                      </tr>
+                      <tr>
+                        <td>SEU_PML </td>
+                        <td>13</td>
+                        <td>270684</td>
+                        <td>6588</td>
+                        <td>1920px to 4096px</td>
+                        <td>41.0874</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                      </tr>
+                      <tr>
+                        <td>BDD100K </td>
+                        <td>12</td>
+                        <td>2221128</td>
+                        <td>100000</td>
+                        <td>1280px</td>
+                        <td>22.2112</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                      </tr>
+                      <tr>
+                        <td>CityFlow </td>
+                        <td>-</td>
+                        <td>229680</td>
+                        <td>~666</td>
+                        <td>960px</td>
+                        <td>344.9</td>
+                        <td>-</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>Y</td>
+                      </tr>
+                      <tr>
+                        <td>IDD </td>
+                        <td>34</td>
+                        <td>77142</td>
+                        <td>10004</td>
+                        <td>1678px</td>
+                        <td>7.711</td>
+                        <td>-</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                      </tr>
+                      <tr>
+                        <td>CARL-D </td>
+                        <td>25</td>
+                        <td>50348</td>
+                        <td>15000</td>
+                        <td>-</td>
+                        <td>3.3565</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Y</td>
+                      </tr>
+                      <tr>
+                        <td>DhakaAI </td>
+                        <td>21</td>
+                        <td>24368</td>
+                        <td>3003</td>
+                        <td>-</td>
+                        <td>8.1145</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                      </tr>
+                      <tr>
+                        <td>P2 Dhaka </td>
+                        <td>8</td>
+                        <td>43796</td>
+                        <td>4777</td>
+                        <td>-</td>
+                        <td>9.1680</td>
+                        <td>-</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>PoribohonBD </td>
+                        <td>16</td>
+                        <td>26851</td>
+                        <td>9058</td>
+                        <td>-</td>
+                        <td>2.9643</td>
+                        <td>Y</td>
+                        <td>-</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                      </tr>
+                      <tr>
+                        <td><b>BNVD</b></td>
+                        <td><b>17</b></td>
+                        <td><b>81542</b></td>
+                        <td><b>17326</b></td>
+                        <td><b>1280px</b></td>
+                        <td><b>4.7036</b></td>
+                        <td><b>Y</b></td>
+                        <td><b>Y</b></td>
+                        <td><b>Y</b></td>
+                        <td><b>Y</b></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                      
             </div>
         </section>
         
         <section id="evaluation" class="section">
             <div class="container">
                 <h2>Evaluation Results</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Model</th>
-                            <th>Dataset</th>
-                            <th>mAP0.5</th>
-                            <th>mAP 0.5:0.95</th>
-                            <th>Precision</th>
-                            <th>Recall</th>
-                            <th>Weight</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td rowspan="5"><strong>YOLOv5</strong></td>
-                            <td>CARL-D</td>
-                            <td>0.437</td>
-                            <td>0.328</td>
-                            <td>0.633</td>
-                            <td>0.423</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>DhakaAI</td>
-                            <td>0.416</td>
-                            <td>0.255</td>
-                            <td>0.640</td>
-                            <td>0.393</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>P2 Dhaka</td>
-                            <td>0.655</td>
-                            <td>0.400</td>
+
+                <div style="text-align: center;">
+                    <h4><b>CATEGORY-WISE AVERAGE PRECISION AT BNVD DATASET</b></h4>
+                </div>
+                <div>
+                    <table border="1">
+                        <colgroup>
+                          <col style="width: 12%;">
+                          <col style="width: 20%;">
+                          <col style="width: 20%;">
+                          <col style="width: 20%;">
+                          <col style="width: 20%;">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>Categories</th>
+                            <th>YOLOv5</th>
+                            <th>YOLOv6</th>
+                            <th>YOLOv7</th>
+                            <th>YOLOv8</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Bicycle</td>
+                            <td>0.786</td>
+                            <td>0.789</td>
+                            <td>0.808</td>
                             <td>0.804</td>
-                            <td>0.581</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>PoribohonBD</td>
-                            <td>0.981</td>
-                            <td>0.743</td>
-                            <td>0.939</td>
-                            <td>0.948</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>BNVD</strong></td>
-                            <td><strong>0.826</strong></td>
-                            <td><strong>0.609</strong></td>
-                            <td><strong>0.836</strong></td>
-                            <td><strong>0.762</strong></td>
-                            <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V5/weights/best.pt">Weight</a></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="5"><strong>YOLOv6</strong></td>
-                            <td>CARL-D</td>
-                            <td>0.479</td>
-                            <td>0.372</td>
-                            <td>0.58</td>
-                            <td>0.453</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>DhakaAI</td>
-                            <td>0.420</td>
-                            <td>0.262</td>
-                            <td>0.311</td>
-                            <td>0.548</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>P2 Dhaka</td>
-                            <td>0.775</td>
-                            <td>0.494</td>
-                            <td>0.762</td>
-                            <td>0.71</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>PoribohonBD</td>
+                          </tr>
+                          <tr>
+                            <td>Bus</td>
                             <td>0.899</td>
-                            <td>0.648</td>
+                            <td>0.892</td>
+                            <td>0.912</td>
+                            <td>0.908</td>
+                          </tr>
+                          <tr>
+                            <td>Bhotbhoti</td>
+                            <td>0.926</td>
+                            <td>0.938</td>
+                            <td>0.944</td>
+                            <td>0.964</td>
+                          </tr>
+                          <tr>
+                            <td>Car</td>
+                            <td>0.876</td>
+                            <td>0.881</td>
                             <td>0.899</td>
-                            <td>0.81</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>BNVD</strong></td>
-                            <td><strong>0.837</strong></td>
-                            <td><strong>0.624</strong></td>
-                            <td><strong>0.805</strong></td>
-                            <td><strong>0.76</strong></td>
-                            <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V6/weights/best_ckpt.pt">Weight</a></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="5"><strong>YOLOv7</strong></td>
-                            <td>CARL-D</td>
-                            <td>0.478</td>
-                            <td>0.369</td>
-                            <td>0.619</td>
-                            <td>0.459</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>DhakaAI</td>
-                            <td>0.464</td>
-                            <td>0.284</td>
-                            <td>0.692</td>
-                            <td>0.438</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>P2 Dhaka</td>
-                            <td>0.743</td>
-                            <td>0.462</td>
-                            <td>0.816</td>
-                            <td>0.688</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>PoribohonBD</td>
-                            <td>0.907</td>
-                            <td>0.656</td>
-                            <td>0.914</td>
-                            <td>0.841</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>BNVD</strong></td>
-                            <td><strong>0.841</strong></td>
-                            <td><strong>0.623</strong></td>
-                            <td><strong>0.83</strong></td>
-                            <td><strong>0.779</strong></td>
-                            <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V7/weights/best.pt">Weight</a></td>
-                        </tr>
-                        <tr>
-                            <td rowspan="5"><strong>YOLOv8</strong></td>
-                            <td>CARL-D</td>
-                            <td>0.478</td>
-                            <td>0.359</td>
-                            <td>0.602</td>
-                            <td>0.446</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>DhakaAI</td>
-                            <td>0.435</td>
-                            <td>0.276</td>
+                            <td>0.881</td>
+                          </tr>
+                          <tr>
+                            <td>CNG</td>
+                            <td>0.893</td>
+                            <td>0.906</td>
+                            <td>0.918</td>
+                            <td>0.921</td>
+                          </tr>
+                          <tr>
+                            <td>Easybike</td>
+                            <td>0.881</td>
+                            <td>0.888</td>
+                            <td>0.905</td>
+                            <td>0.899</td>
+                          </tr>
+                          <tr>
+                            <td>Leguna</td>
+                            <td>0.904</td>
+                            <td>0.91</td>
+                            <td>0.917</td>
+                            <td>0.935</td>
+                          </tr>
+                          <tr>
+                            <td>Motorbike</td>
+                            <td>0.776</td>
+                            <td>0.795</td>
+                            <td>0.79</td>
+                            <td>0.796</td>
+                          </tr>
+                          <tr>
+                            <td>MPV</td>
                             <td>0.694</td>
-                            <td>0.446</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>P2 Dhaka</td>
-                            <td>0.69</td>
-                            <td>0.449</td>
-                            <td>0.798</td>
-                            <td>0.604</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>PoribohonBD</td>
-                            <td>0.889</td>
-                            <td>0.658</td>
-                            <td>0.898</td>
-                            <td>0.823</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>BNVD</strong></td>
-                            <td><strong>0.848</strong></td>
-                            <td><strong>0.643</strong></td>
+                            <td>0.717</td>
+                            <td>0.727</td>
+                            <td>0.726</td>
+                          </tr>
+                          <tr>
+                            <td>Pedestrian</td>
+                            <td>0.633</td>
+                            <td>0.652</td>
+                            <td>0.657</td>
+                            <td>0.669</td>
+                          </tr>
+                          <tr>
+                            <td>Pickup</td>
+                            <td>0.675</td>
+                            <td>0.72</td>
+                            <td>0.708</td>
+                            <td>0.715</td>
+                          </tr>
+                          <tr>
+                            <td>PowerTiller</td>
+                            <td>0.979</td>
+                            <td>0.975</td>
+                            <td>0.973</td>
+                            <td>0.976</td>
+                          </tr>
+                          <tr>
+                            <td>Rickshaw</td>
+                            <td>0.881</td>
+                            <td>0.887</td>
+                            <td>0.892</td>
+                            <td>0.884</td>
+                          </tr>
+                          <tr>
+                            <td>ShoppingVan</td>
+                            <td>0.74</td>
+                            <td>0.755</td>
+                            <td>0.736</td>
+                            <td>0.763</td>
+                          </tr>
+                          <tr>
+                            <td>Truck</td>
+                            <td>0.852</td>
+                            <td>0.85</td>
+                            <td>0.857</td>
+                            <td>0.867</td>
+                          </tr>
+                          <tr>
+                            <td>Van</td>
+                            <td>0.775</td>
+                            <td>0.787</td>
+                            <td>0.788</td>
+                            <td>0.797</td>
+                          </tr>
+                          <tr>
+                            <td>Wheelbarrow</td>
+                            <td>0.886</td>
+                            <td>0.888</td>
+                            <td>0.867</td>
+                            <td>0.91</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Overall</strong></td>
+                            <td><strong>0.826</strong></td>
+                            <td><strong>0.837</strong></td>
                             <td><strong>0.841</strong></td>
-                            <td><strong>0.774</strong></td>
-                            <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V8/weights/yolov8_ods_new_100e_best.pt">Weight</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <td><strong>0.848</strong></td>
+                          </tr>
+                        </tbody>
+                      </table>                      
+                </div>
+                
+                <div style="text-align: center;">
+                    <h4><b>EVALUATION BENCHMARK ON CARL-D, DHAKAAI, P2 DHAKA,
+                        PORIBOHONBD, AND BNVD DATASET USING YOLO MODELS</b></h4>
+                </div>
+                
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Dataset</th>
+                                <th>mAP0.5</th>
+                                <th>mAP 0.5:0.95</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>Weight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="5"><strong>YOLOv5</strong></td>
+                                <td>CARL-D</td>
+                                <td>0.437</td>
+                                <td>0.328</td>
+                                <td>0.633</td>
+                                <td>0.423</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>DhakaAI</td>
+                                <td>0.416</td>
+                                <td>0.255</td>
+                                <td>0.640</td>
+                                <td>0.393</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>P2 Dhaka</td>
+                                <td>0.655</td>
+                                <td>0.400</td>
+                                <td>0.804</td>
+                                <td>0.581</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>PoribohonBD</td>
+                                <td>0.981</td>
+                                <td>0.743</td>
+                                <td>0.939</td>
+                                <td>0.948</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BNVD</strong></td>
+                                <td><strong>0.826</strong></td>
+                                <td><strong>0.609</strong></td>
+                                <td><strong>0.836</strong></td>
+                                <td><strong>0.762</strong></td>
+                                <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V5/weights/best.pt">Weight</a></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5"><strong>YOLOv6</strong></td>
+                                <td>CARL-D</td>
+                                <td>0.479</td>
+                                <td>0.372</td>
+                                <td>0.58</td>
+                                <td>0.453</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>DhakaAI</td>
+                                <td>0.420</td>
+                                <td>0.262</td>
+                                <td>0.311</td>
+                                <td>0.548</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>P2 Dhaka</td>
+                                <td>0.775</td>
+                                <td>0.494</td>
+                                <td>0.762</td>
+                                <td>0.71</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>PoribohonBD</td>
+                                <td>0.899</td>
+                                <td>0.648</td>
+                                <td>0.899</td>
+                                <td>0.81</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BNVD</strong></td>
+                                <td><strong>0.837</strong></td>
+                                <td><strong>0.624</strong></td>
+                                <td><strong>0.805</strong></td>
+                                <td><strong>0.76</strong></td>
+                                <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V6/weights/best_ckpt.pt">Weight</a></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5"><strong>YOLOv7</strong></td>
+                                <td>CARL-D</td>
+                                <td>0.478</td>
+                                <td>0.369</td>
+                                <td>0.619</td>
+                                <td>0.459</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>DhakaAI</td>
+                                <td>0.464</td>
+                                <td>0.284</td>
+                                <td>0.692</td>
+                                <td>0.438</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>P2 Dhaka</td>
+                                <td>0.743</td>
+                                <td>0.462</td>
+                                <td>0.816</td>
+                                <td>0.688</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>PoribohonBD</td>
+                                <td>0.907</td>
+                                <td>0.656</td>
+                                <td>0.914</td>
+                                <td>0.841</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BNVD</strong></td>
+                                <td><strong>0.841</strong></td>
+                                <td><strong>0.623</strong></td>
+                                <td><strong>0.83</strong></td>
+                                <td><strong>0.779</strong></td>
+                                <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V7/weights/best.pt">Weight</a></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5"><strong>YOLOv8</strong></td>
+                                <td>CARL-D</td>
+                                <td>0.478</td>
+                                <td>0.359</td>
+                                <td>0.602</td>
+                                <td>0.446</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>DhakaAI</td>
+                                <td>0.435</td>
+                                <td>0.276</td>
+                                <td>0.694</td>
+                                <td>0.446</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>P2 Dhaka</td>
+                                <td>0.69</td>
+                                <td>0.449</td>
+                                <td>0.798</td>
+                                <td>0.604</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>PoribohonBD</td>
+                                <td>0.889</td>
+                                <td>0.658</td>
+                                <td>0.898</td>
+                                <td>0.823</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>BNVD</strong></td>
+                                <td><strong>0.848</strong></td>
+                                <td><strong>0.643</strong></td>
+                                <td><strong>0.841</strong></td>
+                                <td><strong>0.774</strong></td>
+                                <td><a href="https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V8/weights/yolov8_ods_new_100e_best.pt">Weight</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
             </div>
         </section>
         
-        <section id="contributors" class="section">
-            <div class="container">
-                <div class="column">
-                    <h2>Contributors</h2>
-                    <p><strong>Bipin Saha</strong><br> 
-                        Department of Electrical and Electronic Engineering<br>
-                        University of Rajshahi, Rajshahi 6205, Bangladesh <br>
-                        Email: bipinsaha.bd@gmail.com</p>
-                    <p><strong>Md. Johirul Islam</strong><br>
-                        Department of Physics<br>
-                        Rajshahi University of Engineering and Technology, Rajshahi 6204, Bangladesh<br>
-                        Email: johirul@phy.ruet.ac.bd</p>
-                    <p><strong>Shaikh Khaled Mostaque</strong><br>
-                        Department of Electrical and Electronic Engineering<br>
-                        University of Rajshahi, Rajshahi 6205, Bangladesh<br> 
-                        Email: misha@ru.ac.bd.</p>
+        <section id="contributors" class="section"><div class="container">
+            <h2>Contributors</h2>
+            <div class="card-container">
+                <div class="card-column">
+                    <div class="card-card">
+                        <div class="card-contributor">
+                            <strong>Bipin Saha</strong><br> 
+                            Department of Electrical and Electronic Engineering<br>
+                            University of Rajshahi, Rajshahi 6205, Bangladesh <br>
+                            Email: bipinsaha.bd@gmail.com
+                        </div>
+                    </div>
+                    <div class="card-card" style="margin-top: 20px;">
+                        <div class="card-contributor">
+                            <strong>Md. Johirul Islam</strong><br>
+                            Department of Physics<br>
+                            Rajshahi University of Engineering and Technology, Rajshahi 6204, Bangladesh<br>
+                            Email: johirul@phy.ruet.ac.bd
+                        </div>
+                    </div>
+                    <div class="card-card" style="margin-top: 20px;">
+                        <div class="card-contributor">
+                            <strong>Shaikh Khaled Mostaque</strong><br>
+                            Department of Electrical and Electronic Engineering<br>
+                            University of Rajshahi, Rajshahi 6205, Bangladesh<br> 
+                            Email: misha@ru.ac.bd
+                        </div>
+                    </div>
                 </div>
-                <div class="column">
-                    <p><strong>Aditya Bhowmik</strong> <br>
-                        Department of Electrical and Electronic Engineering <br>
-                        University of Rajshahi, Rajshahi 6205, Bangladesh <br> 
-                        Email: bhowmik.aditya0@gmail.com</p>
-                    <p><strong>Tapodhir Karmakar Taton </strong><br>
-                        Department of Electrical and Electronic Engineering <br>
-                        University of Rajshahi, Rajshahi 6205, Bangladesh <br> 
-                        Email: tapodhirtaton@gmail.com</p>
-                    <p><strong>Md Nakib Hayat Chowdhury </strong><br>
-                        Department of Electrical Electronic and Systems Engineering<br>
-                        Universiti Kebangsaan Malaysia, Malaysia<br> 
-                        Email: nakib2025@gmail.com</p>
-                    <p><strong>Mamun Bin Ibne Reaz</strong><br> 
-                        Electrical and Electronic Engineering<br>
-                        Independent University, Bangladesh<br>
-                        Email: mamun.reaz@iub.edu.bd</p>
+                <div class="card-column">
+                    <div class="card-card">
+                        <div class="card-contributor">
+                            <strong>Aditya Bhowmik</strong><br>
+                            Department of Electrical and Electronic Engineering<br>
+                            University of Rajshahi, Rajshahi 6205, Bangladesh<br> 
+                            Email: bhowmik.aditya0@gmail.com
+                        </div>
+                    </div>
+                    <div class="card-card" style="margin-top: 20px;">
+                        <div class="card-contributor">
+                            <strong>Tapodhir Karmakar Taton</strong><br>
+                            Department of Electrical and Electronic Engineering<br>
+                            University of Rajshahi, Rajshahi 6205, Bangladesh<br> 
+                            Email: tapodhirtaton@gmail.com
+                        </div>
+                    </div>
+                    <div class="card-card" style="margin-top: 20px;">
+                        <div class="card-contributor">
+                            <strong>Md Nakib Hayat Chowdhury</strong><br>
+                            Department of Electrical Electronic and Systems Engineering<br>
+                            Universiti Kebangsaan Malaysia, Malaysia<br> 
+                            Email: nakib2025@gmail.com
+                        </div>
+                    </div>
+                    <div class="card-card" style="margin-top: 20px;">
+                        <div class="card-contributor">
+                            <strong>Mamun Bin Ibne Reaz</strong><br>
+                            Electrical and Electronic Engineering<br>
+                            Independent University, Bangladesh<br>
+                            Email: mamun.reaz@iub.edu.bd
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            
+            
         </section>
+        
         
         <section id="citation" class="section">
-        <div class="container">
-            <h2>Citation</h2>
-            <p>DOI: <a href="https://doi.org/10.48550/arXiv.2405.12150" target="_blank">https://doi.org/10.48550/arXiv.2405.12150</a></p>
-            <pre>
-                @misc{saha2024bangladeshi,
-                title={Bangladeshi Native Vehicle Detection in Wild}, 
-                author={Bipin Saha and Md. Johirul Islam and Shaikh Khaled Mostaque and 
-                Aditya Bhowmik and Tapodhir Karmakar Taton and Md. Nakib Hayat Chowdhury and Mamun Bin Ibne Reaz},
-                year={2024},
-                eprint={2405.12150},
-                archivePrefix={arXiv},
-                primaryClass={cs.CV}
-}
-        </pre>
-    </div>
-</section>
-
+            <div class="container">
+                <h2>Citation</h2>
+                <p>DOI: <a href="https://doi.org/10.48550/arXiv.2405.12150" target="_blank">https://doi.org/10.48550/arXiv.2405.12150</a></p>
+                <div style="border: 1px solid #ccc; padding: 20px; border-radius: 10px; background-color: #f9f9f9; position: relative;">
+                    <pre id="citation-text" style="white-space: pre-wrap; word-wrap: break-word;">
+        @misc{saha2024bangladeshi,
+        title={Bangladeshi Native Vehicle Detection in Wild}, 
+        author={Bipin Saha and Md. Johirul Islam and Shaikh Khaled Mostaque and 
+        Aditya Bhowmik and Tapodhir Karmakar Taton and Md. Nakib Hayat Chowdhury and Mamun Bin Ibne Reaz},
+        year={2024},
+        eprint={2405.12150},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}}
+                    </pre>
+                    <button onclick="copyCitation()" style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                        Copy
+                    </button>
+                </div>
+            </div>
+        </section>
+        
 
         <section id="download" class="section">
             <div class="container">
-                <h2>Download</h2>
-                <p>Here you can find the links to download the dataset and any supplementary materials.</p>
-                <ul>
-                    <li><a href="https://www.kaggle.com/datasets/sahabipin/bangladeshi-native-vehicle-dataset" target="_blank">Download Dataset from Kaggle</a></li>
-                </ul>
+                <h2>Dataset</h2>
+                <a href="https://www.kaggle.com/datasets/sahabipin/bangladeshi-native-vehicle-dataset" target="_blank" style="text-decoration: none;">
+                    <button style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                        <i class="fa fa-download" aria-hidden="true" style="margin-right: 8px;"></i>Download Dataset from Kaggle
+                    </button>
+                </a>
             </div>
         </section>
+        
+        
 
         <section id="tools" class="section">
             <div class="container">
                 <h2>Tools</h2>
-                <ul>
-                    <li><a href="https://github.com/bipin-saha/BNVD/tree/main/notebooks" target="_blank">Notebooks</a> - Training and Validation Notebooks for YOLO v5, v6, v7 and v8</li>
-                    <li><a href="https://github.com/drainingsun/ybat" target="_blank">Annotation Tools</a> - YBAT is an open-source tool used for all of the annotations.</li>
-                    <li><a href="https://github.com/bipin-saha/BNVD/tree/main/Tools" target="_blank">Dataset Tools</a> - Dataset Health Checking and Annotation Mapping</li>
+                <ul style="list-style-type: none; padding-left: 0; font-family: Arial, sans-serif; display: inline-block;">
+                    <li style="margin-bottom: 15px; display: inline-block; margin-right: 20px;">
+                        <a href="https://github.com/bipin-saha/BNVD/tree/main/notebooks" target="_blank" style="text-decoration: none; display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;">
+                            Notebooks
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px; display: inline-block; margin-right: 20px;">
+                        <a href="https://github.com/drainingsun/ybat" target="_blank" style="text-decoration: none; display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;">
+                            Annotation Tools
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px; display: inline-block;">
+                        <a href="https://github.com/bipin-saha/BNVD/tree/main/Tools" target="_blank" style="text-decoration: none; display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;">
+                            Dataset Tools
+                        </a>
+                    </li>
                 </ul>
+                
+                               
+                
             </div>
         </section>
     </main>
     
     <footer>
         <div class="container">
-            <p>&copy; 2024 Dataset Paper. All rights reserved.</p>
-            <p>Page Views: <span id="page-view-counter">0</span></p>
+            <p>&copy; BNVD - Bangladeshi Native Vehicle Dataset. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Simple page view counter
-        document.addEventListener('DOMContentLoaded', () => {
-            let counter = localStorage.getItem('page_view_counter') || 0;
-            counter++;
+
+       document.addEventListener('DOMContentLoaded', () => {
+            // Get the current counter value from localStorage
+            let counter = localStorage.getItem('page_view_counter');
+            
+            // If counter is null (first visit), set it to 0
+            if (counter === null) {
+                counter = 0;
+            }
+            
+            // Convert counter to a number and increment it
+            counter = Number(counter) + 1;
+            
+            // Store the updated counter value back in localStorage
             localStorage.setItem('page_view_counter', counter);
+            
+            // Update the text content of the page view counter element
             document.getElementById('page-view-counter').textContent = counter;
         });
+
+        function copyCitation() {
+                var citationText = document.getElementById("citation-text").innerText;
+                navigator.clipboard.writeText(citationText).then(function() {
+                    alert("Citation copied to clipboard!");
+                }, function(err) {
+                    alert("Failed to copy citation!");
+                });
+            }
     </script>
 </body>
 </html>

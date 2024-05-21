@@ -163,3 +163,44 @@ a:hover {
         border-bottom: 1px solid #444;
     }
 }
+
+
+
+
+.card-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.card-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.card-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-contributor {
+    margin-bottom: 20px;
+}
+
+.card-contributor strong {
+    font-weight: bold;
+}
+
+.image-container {
+    text-align: center;
+}

@@ -57,18 +57,27 @@ The dataset has been rigorously tested with YOLO v5-v8 models. The mean Average 
 |              | **BNVD**         | **0.848**  | **0.643**      | **0.841**  | **0.774**  | [Weight](https://github.com/bipin-saha/BNVD-Bangladeshi-Native-Vehicle-Dataset/blob/main/Cheakpoints/YOLO%20V8/weights/yolov8_ods_new_100e_best.pt)      |
 
 ## Download
-The dataset and related resources can be downloaded from [here](https://www.kaggle.com/datasets/df94f7d6faf5374ca372cdb7456067ffa7786867578fa6b524d0fe7b5ee43ab6).
+The dataset and related resources can be downloaded from [here](https://www.kaggle.com/datasets/sahabipin/bangladeshi-native-vehicle-dataset).
 
 ## Checkpoints
 Pre-trained model weight files can be found in the "Checkpoints" folder of this repository.
 
 ## License
-This dataset is released under the [insert license type] license.
+
 
 ## Citation
 If you use this dataset in your work, please consider citing:
 
-[Insert citation information here]
+`@misc{saha2024bangladeshi,
+        title={Bangladeshi Native Vehicle Detection in Wild}, 
+        author={Bipin Saha and Md. Johirul Islam and Shaikh Khaled Mostaque and 
+        Aditya Bhowmik and Tapodhir Karmakar Taton and Md. Nakib Hayat Chowdhury and Mamun Bin Ibne Reaz},
+        year={2024},
+        eprint={2405.12150},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}}`
+
+  DOI: `doi.org/10.48550/arXiv.2405.12150`
 
 ## Contributors
 We would like to thank the following contributors for their valuable contributions to the development of this dataset.

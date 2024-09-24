@@ -1,4 +1,4 @@
 yolov8 - version - ultralytics 8.2.2
-yolov7 - 
+yolov7 - commit id - a207844b1ce82d204ab36d87d496728d3d2348e7
 yolov6 - commit id - e86a483f3f6bded25d45970b56831345a99744a4
 yolov5 - commit id - b599ae42d9adb8bcb96a1de6ad093436aac9fe6b
